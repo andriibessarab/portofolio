@@ -1,4 +1,3 @@
-/* Variables */
 $header1: 2.5rem;
 $header2: 4rem;
 $header3: 2.5rem;
@@ -6,9 +5,8 @@ $header4: 2rem;
 $text: 2.5rem;
 $background-color: #154353;
 $text-color: #2c2c2c;
-$gradient-color: linear-gradient(left, #38d39f, #38a4d3);
+$gradient-color: linear-gradient(to right, #38d39f, #38a4d3);
 
-/* Mixins */
 @mixin flex($justify, $align, $direction) {
   display: flex;
   justify-content: $justify;
@@ -16,5 +14,5 @@ $gradient-color: linear-gradient(left, #38d39f, #38a4d3);
   flex-direction: $direction;
 }
 
-/* Imports */
 @import "global";
+@import "intro";

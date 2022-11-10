@@ -1,40 +1,110 @@
-/* Variables */
-/* Mixins */
-/* Imports */
-/* Global */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
 html {
-  font-size: 67.5%;
+  font-size: 62.5%;
   scroll-behavior: smooth; }
 
 body {
   animation: opening 1s ease-in-out; }
 
-/* Global */
-h2 {
+h1 {
+  font-size: 2.5rem; }
 
-}
+h2 {
+  font-size: 4rem; }
 
 h3 {
-
-  }
+  font-size: 2.5rem; }
 
 h4, h5 {
+  font-size: 2rem; }
 
-}
+li, button, label, input, p, a {
+  font-size: 2.5rem; }
 
 ul {
   list-style: none; }
 
 a {
   text-decoration: none;
-  color: black; }
+  color: #2c2c2c; }
 
 img {
   pointer-events: none; }
+
+.main-head {
+  width: 95%;
+  margin: 0 0 0 auto; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  min-height: 10vh;
+  width: 60%;
+  flex-wrap: wrap; }
+  nav .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex: 1 1 10rem; }
+    nav .logo h1 {
+      margin: 2rem; }
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex: 1 1 40rem; }
+
+.intro {
+  min-height: 90vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .intro h2 {
+    font-size: 8rem;
+    padding-top: 2rem;
+    background: linear-gradient(to right, #38d39f, #38a4d3);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block; }
+  .intro h3 {
+    font-size: 6rem;
+    padding: 2rem 0; }
+  .intro p {
+    padding-top: 2rem;
+    color: #2c2c2c; }
+
+.splash {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: -1; }
+
+.intro-socials {
+  margin-top: 4rem; }
+  .intro-socials a {
+    margin-right: 2rem; }
+
+.active {
+  background: rgba(21, 67, 83, 0.9);
+  color: white;
+  padding: 1rem 3rem;
+  border-radius: 2rem; }
+
+.intro-text, .intro-images {
+  flex: 1 1 40rem; }
 
 /*# sourceMappingURL=style.css.map */

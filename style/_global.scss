@@ -1,4 +1,3 @@
-/* Global */
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +5,7 @@
 }
 
 html{
-  font-size: 67.5%;
+  font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
@@ -14,24 +13,26 @@ body {
   animation: opening 1s ease-in-out;
 }
 
-/* Global */
 h1 {
-
-}
-
-li, button, label, input, p, a {
+  font-size: $header1;
 }
 
 h2 {
+  font-size: $header2;
 }
 
 h3 {
-  font-size: var(--header3);
+  font-size: $header3;
 }
 
 h4, h5 {
-  font-size: var(--header4);
+  font-size: $header4;
 }
+
+li, button, label, input, p, a {
+  font-size: $text;
+}
+
 
 ul {
   list-style: none;
@@ -39,7 +40,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: black;
+  color: $text-color;
 }
 
 img {
