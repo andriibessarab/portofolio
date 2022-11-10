@@ -1,0 +1,11 @@
+# IDE-specific stuff
+.idea
+
+# SASS/SCSS
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
+# osx
+.DS_Store

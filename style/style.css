@@ -1,0 +1,40 @@
+/* Variables */
+/* Mixins */
+/* Imports */
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 67.5%;
+  scroll-behavior: smooth; }
+
+body {
+  animation: opening 1s ease-in-out; }
+
+/* Global */
+h2 {
+
+}
+
+h3 {
+
+  }
+
+h4, h5 {
+
+}
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+img {
+  pointer-events: none; }
+
+/*# sourceMappingURL=style.css.map */
