@@ -11,6 +11,7 @@ html{
 
 body {
   animation: opening 1s ease-in-out;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
@@ -45,4 +46,13 @@ a {
 
 img {
   pointer-events: none;
+}
+
+@keyframes opening {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
