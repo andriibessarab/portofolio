@@ -51,7 +51,7 @@ nav {
   align-items: center;
   flex-direction: row;
   min-height: 10vh;
-  width: 60%;
+  width: 100%;
   flex-wrap: wrap; }
   nav .logo {
     display: flex;
@@ -66,7 +66,14 @@ nav {
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    flex: 1 1 40rem; }
+    flex: 1 1 30rem; }
+
+.active {
+  transition: none;
+  background: rgba(21, 67, 83, 0.9);
+  color: white;
+  padding: 1rem 3rem !important;
+  border-radius: 2rem; }
 
 .intro {
   min-height: 90vh;
@@ -102,12 +109,6 @@ nav {
   margin-top: 4rem; }
   .intro-socials a {
     margin-right: 2rem; }
-
-.active {
-  background: rgba(21, 67, 83, 0.9);
-  color: white;
-  padding: 1rem 3rem;
-  border-radius: 2rem; }
 
 .intro-text, .intro-images {
   flex: 1 1 40rem; }
@@ -145,6 +146,73 @@ nav {
     transform: rotateZ(0deg); }
   to {
     transform: rotateZ(360deg); } }
+.projects {
+  display: grid;
+  min-height: 85vh;
+  width: 90%;
+  margin: auto;
+  grid-template-columns: 1fr 1fr 1.5fr;
+  grid-gap: 2rem;
+  grid-template-rows: auto; }
+  .projects .project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    position: relative; }
+    .projects .project img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    .projects .project a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 3.5rem;
+      color: white; }
+    .projects .project .gradient {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: linear-gradient(to right, rgba(56, 211, 159, 0.8), rgba(56, 164, 211, 0.8));
+      transition: opacity 0.5s ease-in-out; }
+    .projects .project:has(> a:hover) .gradient, .projects .project:has(> a:hover) a {
+      opacity: 0; }
+
+#travelly {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  background-image: url("../img/travelly.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+#elena-joy {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  background-image: url("../img/elena-joy.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+#chargi-fi {
+  grid-column: 3/4;
+  grid-row: 1/3;
+  background-image: url("../img/chargi-fi.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
 @media screen and (max-width: 1400px) {
   html {
     font-size: 53%; }
@@ -157,6 +225,18 @@ nav {
 
   .intro-images {
     text-align: center; } }
+@media screen and (max-width: 900px) {
+  #travelly {
+    grid-column: 1/4;
+    grid-row: 1/2; }
+
+  #elena-joy {
+    grid-column: 1/4;
+    grid-row: 2/3; }
+
+  #chargi-fi {
+    grid-column: 1/4;
+    grid-row: 3/4; } }
 @media screen and (max-width: 754px) {
   html {
     font-size: 45%; }
@@ -165,17 +245,11 @@ nav {
     height: 60%; }
 
   .main-head {
-    width: 100%; }
+    width: 98%; }
 
   nav .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex: 1 1 20rem;
-    margin-top: 2rem; }
+    margin: 2rem 1rem; }
   nav ul {
-    flex: 11 60rem;
     margin: 2rem 0; }
 
   .intro-text {
@@ -188,6 +262,21 @@ nav {
     align-items: center;
     flex-direction: row; }
     .intro-socials a {
-      margin: 2rem; } }
+      margin: 2rem; }
+
+  #travelly {
+    grid-column: 1/4;
+    grid-row: 1/2; }
+
+  #elena-joy {
+    grid-column: 1/4;
+    grid-row: 2/3; }
+
+  #chargi-fi {
+    grid-column: 1/4;
+    grid-row: 3/4; } }
+@media screen and (max-width: 500px) {
+  nav .logo {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */

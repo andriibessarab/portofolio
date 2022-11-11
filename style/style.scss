@@ -15,7 +15,9 @@ $gradient-color: linear-gradient(to right, #38d39f, #38a4d3);
 }
 
 @import "global";
+@import "nav";
 @import "intro";
+@import "projects";
 
 @media screen and (max-width: 1400px) {
   html {
@@ -35,6 +37,23 @@ $gradient-color: linear-gradient(to right, #38d39f, #38a4d3);
   }
 }
 
+@media screen and (max-width: 900px) {
+  #travelly {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+
+  #elena-joy {
+    grid-column: 1/4;
+    grid-row: 2/3;
+  }
+
+  #chargi-fi {
+    grid-column: 1/4;
+    grid-row: 3/4;
+  }
+}
+
 @media screen and (max-width: 754px) {
   html {
     font-size: 45%
@@ -45,18 +64,15 @@ $gradient-color: linear-gradient(to right, #38d39f, #38a4d3);
   }
 
   .main-head {
-    width: 100%;
+    width: 98%;
   }
 
   nav {
     .logo {
-      @include flex(center, center, column);
-      flex: 1 1 20rem;
-      margin-top: 2rem;
+      margin: 2rem 1rem;
     }
 
     ul {
-      flex: 11 60rem;
       margin: 2rem 0;
     }
   }
@@ -73,4 +89,27 @@ $gradient-color: linear-gradient(to right, #38d39f, #38a4d3);
       margin: 2rem;
     }
   }
+
+  #travelly {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+
+  #elena-joy {
+    grid-column: 1/4;
+    grid-row: 2/3;
+  }
+
+  #chargi-fi {
+    grid-column: 1/4;
+    grid-row: 3/4;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  nav .logo {
+    display: none;
+  }
+
 }
