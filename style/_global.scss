@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
@@ -30,10 +30,9 @@ h4, h5 {
   font-size: $header4;
 }
 
-li, button, label, input, p, a {
+li, button, label, input, textarea, p, a {
   font-size: $text;
 }
-
 
 ul {
   list-style: none;

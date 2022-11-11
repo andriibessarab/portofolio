@@ -18,6 +18,8 @@ $gradient-color: linear-gradient(to right, #38d39f, #38a4d3);
 @import "nav";
 @import "intro";
 @import "projects";
+@import "contact";
+@import "footer";
 
 @media screen and (max-width: 1400px) {
   html {
@@ -104,12 +106,14 @@ $gradient-color: linear-gradient(to right, #38d39f, #38a4d3);
     grid-column: 1/4;
     grid-row: 3/4;
   }
+
+  .contact form {
+    width: 95%;
+  }
 }
 
 @media screen and (max-width: 500px) {
-
   nav .logo {
     display: none;
   }
-
 }

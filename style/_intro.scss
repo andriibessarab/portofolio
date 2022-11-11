@@ -1,5 +1,5 @@
 .intro {
-  min-height: 90vh;
+  min-height: 85vh;
   width: 90%;
   margin: auto;
   @include flex(space-between, center, row);
@@ -36,9 +36,9 @@
 .intro-socials {
   margin-top: 4rem;
 
-   a {
-     margin-right: 2rem;
-   }
+  a {
+    margin-right: 2rem;
+  }
 }
 
 .intro-text, .intro-images {
@@ -63,14 +63,14 @@
 }
 
 #clock-arrow {
-  animation: clock 4s linear infinite ;
+  animation: clock 4s linear infinite;
   transform-origin: bottom;
   transform-box: fill-box;
 }
 
 @keyframes me {
   from {
-    transform: rotateZ(-3deg) ;
+    transform: rotateZ(-3deg);
   }
   to {
     transform: rotateZ(3deg);
@@ -79,7 +79,7 @@
 
 @keyframes plant {
   from {
-    transform: translateY(0%) ;
+    transform: translateY(0%);
   }
   to {
     transform: translateY(-30%);
@@ -88,7 +88,7 @@
 
 @keyframes clock {
   from {
-    transform: rotateZ(0deg) ;
+    transform: rotateZ(0deg);
   }
   to {
     transform: rotateZ(360deg);

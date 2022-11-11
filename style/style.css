@@ -23,7 +23,7 @@ h3 {
 h4, h5 {
   font-size: 2rem; }
 
-li, button, label, input, p, a {
+li, button, label, input, textarea, p, a {
   font-size: 2.5rem; }
 
 ul {
@@ -76,7 +76,7 @@ nav {
   border-radius: 2rem; }
 
 .intro {
-  min-height: 90vh;
+  min-height: 85vh;
   width: 90%;
   margin: auto;
   display: flex;
@@ -153,7 +153,8 @@ nav {
   margin: auto;
   grid-template-columns: 1fr 1fr 1.5fr;
   grid-gap: 2rem;
-  grid-template-rows: auto; }
+  grid-template-rows: auto;
+  padding-bottom: 1rem; }
   .projects .project {
     display: flex;
     justify-content: center;
@@ -212,6 +213,52 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
+
+.contact {
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; }
+  .contact form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem 10rem;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 2rem; }
+    .contact form h2 {
+      padding-bottom: 3rem; }
+    .contact form input, .contact form textarea {
+      margin: 2rem; }
+      .contact form input:focus, .contact form textarea:focus {
+        outline: 2px solid black; }
+    .contact form button {
+      width: 100%;
+      padding: 2rem;
+      background-color: #154353;
+      color: white; }
+      .contact form button:focus {
+        background-color: #33696b; }
+
+footer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  background-color: #154353;
+  color: white;
+  min-height: 5vh;
+  padding: 0 5%; }
+  footer ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex: 1 1 20rem; }
+  footer h4 {
+    flex: 1 1 70rem; }
 
 @media screen and (max-width: 1400px) {
   html {
@@ -274,7 +321,10 @@ nav {
 
   #chargi-fi {
     grid-column: 1/4;
-    grid-row: 3/4; } }
+    grid-row: 3/4; }
+
+  .contact form {
+    width: 95%; } }
 @media screen and (max-width: 500px) {
   nav .logo {
     display: none; } }

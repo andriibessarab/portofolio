@@ -6,6 +6,7 @@
   grid-template-columns: 1fr 1fr 1.5fr;
   grid-gap: 2rem;
   grid-template-rows: auto;
+  padding-bottom: 1rem;
 
   .project {
     @include flex(center, center, row);
